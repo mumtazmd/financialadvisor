@@ -1,0 +1,549 @@
+/* Global Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.custom-bg-primary{
+  background-color:#2B337A !important;
+}
+.btn-outline{
+  background: none !important;
+  border-radius: 6px !important;
+  padding: 5px 10px !important;
+  border: solid 1px #737EC8 !important;
+}
+body{
+  background-color: #f5f7ff !important;
+}
+.btn-success{
+  background-color: #3A8722 !important;
+}
+.form-control{
+  text-indent: 30px;
+  padding-left: 25px !important;
+    height: 51px !important;
+    color: #666666 !important;
+    border-radius: 10px !important;
+}
+
+/*End Global Style */
+
+/* Header Style */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.upload-btn{
+  background: #DBDFFF;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  padding: 8px 14px;
+  box-shadow: 0px 1px 8px -3px #000;
+  color: #232E79;
+}
+.header {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background: white;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* End Header Style */
+
+/* Main Right side Style */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.main-content {
+  display: flex;
+  flex-grow: 1;
+}
+.content {
+  flex-grow: 1;
+  transition: margin-left 0.3s;
+  padding: 10px;
+}
+.content.open {
+  margin-left: 250px;
+}
+.content.closed {
+  margin-left: 0;
+}
+
+
+/* End Main Right side Style */
+
+/* Sidebar style */
+.sidebar {
+  position: fixed;
+  top: 78px; /* Align below the header */
+  left: 0;
+  height: calc(100% - 50px); /* Prevent overlapping header */
+  width: 250px;
+  background-color:#2B337A;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  padding-top: 20px;
+}
+
+ul.sidebar-nav li {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+/* ul.sidebar-nav li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+} */
+
+
+.siebar-icons::before{
+  content: '';
+  height: 27px;
+  width: 27px;
+  display: flex;
+}
+.dash_icon::before{
+  background: url(../public/dashboard-icon.png) no-repeat;
+}
+.income_icon::before{
+  background: url(../public/income-icon.png) no-repeat;
+}
+.expenses_icon::before{
+  background: url(../public/expenses-icon.png) no-repeat;
+}
+.loans_icon::before{
+  background: url(../public/loans-icon.png) no-repeat;
+}
+.creditcard_icon::before{
+  background: url(../public/creditcard-icon.png) no-repeat;
+}
+i.dash_icon, .income_icon, .expenses_icon, .loans_icon, .creditcard_icon  {
+  margin: 0 14px;
+}
+
+ul.sidebar-nav li a {
+  /* background: #38459E; */
+  padding: 10px 16px;
+  line-height: 2;
+  align-items: center;
+
+}
+
+ul.sidebar-nav li a.active, ul.sidebar-nav li a:hover  {
+  background: #38459E;
+  padding: 10px 16px;
+  /* line-height: 3; */
+  align-items: center;
+  border-radius: 24px;
+  width: 100%;
+}
+/* ul.sidebar-nav li a:hover {
+  background: #38459E;
+ 
+} */
+
+ul.sidebar-nav{
+margin: 0 15px;
+padding: 0;
+}
+
+
+/*End Sidebar style */
+
+/* IncomeExpenses Style */
+.progress-bar{
+  margin: 2px 3px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  text-align: left !important;
+}
+
+/*End IncomeExpenses Style */
+
+/* Credit Card Style */
+.credit-card{
+  background: url(../public/credit-card-bg.png) no-repeat;
+  display: flex;
+  /* width: 100%;
+  max-width: 324px; */
+  min-height: 312px;
+  border: solid 0px !important;
+  justify-content: center;
+  padding: 10px 20px;
+  background-size: 100%;
+  border-radius: 20px !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  border: solid 1px;
+  border-radius: 20px;
+  background-size: 66% 70% !important;
+}
+/* End Credit Card Style */
+
+  /* Loan Style */
+  .bg-custom-gradient
+  {
+    background: hsla(233, 54%, 29%, 1);
+
+background: linear-gradient(135deg, hsla(233, 54%, 29%, 1) 1%, hsla(234, 39%, 49%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(233, 54%, 29%, 1) 1%, hsla(234, 39%, 49%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(233, 54%, 29%, 1) 1%, hsla(234, 39%, 49%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222B73", endColorstr="#4C56AC", GradientType=1 );
+  }
+  .loan-section {
+    border-radius: 12px;
+  }
+  .loan-section h5{
+    font-size: 24px;
+  }
+  
+  .loan-card {
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+  }
+  
+  .loan-icon {
+    font-size: 24px;
+    color: #5d8eff;
+    background: #fff;
+    padding: 16px 22px;
+    border-radius: 10px;
+  }
+  
+  .loan-card h6 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .loan-card p {
+    font-size: 32px;
+    margin: 0;
+  }
+  .bi-arrow-right::before{
+    color: #78CFFC;
+  }
+  /* End Loan Style */
+
+
+  /* Transaction Card Style */
+  .transaction-card {
+    background: #2B337A; /* Dark Blue Background */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    /* max-width: 350px; */
+  }
+  
+  .transaction-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+  }
+  .transaction-item p{
+    margin-bottom: 0px;
+  }
+  .transaction-date {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  .transaction-amount {
+    font-weight: bold;
+  }
+
+  
+  /* Transaction Card Style */
+
+  /* User Register Style */
+  .register-container, .login-container {
+    display: flex;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .register-container{
+    max-width: 1061px;
+  }
+  .login-container{
+    max-width: 987px;
+  }
+  
+  
+  .register-left, .login-left {
+    background: #283593;
+    color: white;
+    text-align: center;
+    flex: 1;
+    min-height: 100%
+  }
+  .register-left{
+    padding: 40px;
+  }
+  .login-left{
+    padding: 84px;
+  }
+  
+  .register-left img {
+    
+    margin-top: 44px;
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+  .register-right, .login-right {
+    
+    flex: 1;
+    min-height: 100%
+  }
+  .register-right{
+    padding: 40px;
+  }
+  .login-right{
+    padding: 80px;
+  }
+  
+  .register-right h3 {
+    font-weight: bold;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #606BB9;
+  }
+  
+   
+  .form-check {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-check a {
+    color: #283593;
+    text-decoration: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+
+  /*End  User Register Style */
+
+  /* Login Style */
+  .social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .separator span {
+    background: #f1f1f1;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a img {
+    width: 100%;
+    /* height: 40px; */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /*End  Login Style */
