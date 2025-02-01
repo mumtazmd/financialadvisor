@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound.tsx";
 import Incomes from "./pages/Incomes.tsx";
 import UserRegister from "./pages/UserRegister.tsx";
 import Login from "./pages/Login.tsx";
+import UploadDoc from "./pages/UploadDoc.tsx";
 
 
 
@@ -25,6 +26,7 @@ const AppRoutes = () => {
       <Route path="/transactions" element={<TransactionCard />} />
       <Route path="/user-registration" element={<UserRegister />} />
       <Route path="/user-login" element={<Login />} />
+      <Route path="/upload" element={<UploadDoc />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

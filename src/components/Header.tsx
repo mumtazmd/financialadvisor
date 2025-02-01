@@ -1,5 +1,5 @@
 import React from "react";
-import { Dropdown } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 
 
@@ -19,7 +19,9 @@ function Header() {
       
       
       <div className="col-md-5 text-end poppins-medium">
-        <button className="upload-btn">Upload Documents</button>
+        <Link to="/upload" className="upload-btn text-decoration-none">
+          Upload Document
+        </Link>
       </div>
 
      

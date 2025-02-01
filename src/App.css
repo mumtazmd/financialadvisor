@@ -547,3 +547,21 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222B73", en
   }
   
   /*End  Login Style */
+
+  /* Upload Doc Style */
+  .upload-doc{
+    background: #575F99 !important;
+    color: white;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    padding: 20px !important;
+    
+  }
+  .submit-btn{
+    background: #232E79 !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    border: solid 1px #fff !important;
+  }
+
+  /* End Upload Doc Style */
