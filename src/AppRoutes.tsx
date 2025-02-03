@@ -12,6 +12,9 @@ import Incomes from "./pages/Incomes.tsx";
 import UserRegister from "./pages/UserRegister.tsx";
 import Login from "./pages/Login.tsx";
 import UploadDoc from "./pages/UploadDoc.tsx";
+import ForgotPwd from "./pages/ForgotPwd.tsx";
+import ResetPwd from "./pages/ResetPwd.tsx";
+import EmailVerify from "./pages/EmailVerify.tsx";
 
 
 
@@ -27,6 +30,9 @@ const AppRoutes = () => {
       <Route path="/user-registration" element={<UserRegister />} />
       <Route path="/user-login" element={<Login />} />
       <Route path="/upload" element={<UploadDoc />} />
+      <Route path="/forgotpwd" element={<ForgotPwd />} />
+      <Route path="/resetpwd" element={<ResetPwd />} />
+      <Route path="/emailverify" element={<EmailVerify />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

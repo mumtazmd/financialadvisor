@@ -565,3 +565,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222B73", en
   }
 
   /* End Upload Doc Style */
+
+  /* Forgot Password Style */
+  .forgot-pwd-wrapper{
+    padding: 10rem 3rem;
+  }
+  /* End Forgot Password Style */
